@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <section id="the-top-side-of-the-container">
+                
+                <h1>Metric/Imperial Unit Conversion</h1>
+
+                <div id="underline"></div>
+
+                <div id="input-and-buttons-container">
+
+                    <input id="input-el" type="text" inputmode="numeric" placeholder="Enter a number">
+
+                    <div id="buttons-container">
+                        <button id="convert-btn" class="buttons-style">Convert</button>
+                        <button id="clear-all-btn" class="buttons-style">Clear all</button>
+                    </div>      
+
+                </div>
+                
+            </section>
+            
+            <section id="the-bottom-side-of-the-container">
+                
+                <div class="conversion-boxes">
+                    <h3 class="conversion-titles">Length (Meter/Feet)</h3>
+                    <p class="conversion-paragraphs" id="conversion-length-paragraph">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+                </div>
+                
+                <div class="conversion-boxes">
+                    <h3 class="conversion-titles">Volume (Liters/Gallons)</h3>
+                    <p class="conversion-paragraphs" id="conversion-volume-paragraph">0 litres = 0.000 gallons | 0 gallons = 0.000 litres</p>
+                </div>
+                
+                <div class="conversion-boxes">
+                    <h3 class="conversion-titles">Mass (Kilograms/Pounds)</h3>
+                    <p class="conversion-paragraphs" id="conversion-mass-paragraph">0 Kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+                </div>
+
+                <p id="copyright-info">© 2025 <a id="my-linkedin-link" href="https://www.linkedin.com/in/anton-antonov-589791326/" target="_blank">Anton Antonov</a> — Crafted with care & a bit of caffeine ☕</p>
+                
+            </section>
+            
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,342 @@
+html, body {
+    background-color: #1F2937;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    touch-action: manipulation; /* Забранява зуумване при клик */
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#the-top-side-of-the-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрира по хоризонтала */
+    width: 100%;
+    height: 310px;
+    background-color: #6943FF;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+h1 {
+    margin: 15px 0 0 0;
+    padding: 15px 0 13px 0;
+    font-size: 35px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#underline {
+    width: 96%;
+    max-width: 650px;
+    margin: 0 0 30px 0;
+    border-bottom: 3px solid #FFFFFF;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#input-and-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира по хоризонтала */
+    gap: 20px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#input-el {
+    width: 250px;
+    height: 75px;
+    padding: 0 15px 0 15px;
+    border: 2px solid #B295FF;
+    border-radius: 6px;
+    background-color: #2D1A6C;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#input-el:focus {
+    border-color: #D6C0FF;
+    box-shadow: 0 0 8px #B295FF;
+    outline: none;
+}
+
+#input-el::placeholder {
+    position: relative;
+    top: 50%;
+    transform: translateY(-124%);
+    font-size: 28px;
+    color: #D1B2FF;          /* Светло лилав – контрастира с тъмния фон */
+    font-style: italic;      /* Придава по-нежен и различен вид */
+    letter-spacing: 0.5px;   /* Малко повече въздух между буквите */
+    opacity: 0.85;           /* По-мек външен вид */
+}
+
+#input-el {
+    transition: all 0.3s ease;
+}
+
+/* Премахване на стрелките от полето за Chrome, Safari, Edge */
+#input-el::-webkit-outer-spin-button,
+#input-el::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Премахване на стрелките от полето за Firefox */
+#input-el {
+    -moz-appearance: textfield;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Разстояние между бутоните */
+    margin-top: 5px;
+}
+
+.buttons-style {
+    width: 258px;
+    height: 55px;
+    border: 2px solid #B295FF;
+    border-radius: 8px;
+    background-color: #4C2889;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttons-style:hover {
+    background-color: #6A3BC7;
+    cursor: pointer;
+}
+
+.buttons-style {
+    transition: all 0.3s ease;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#the-bottom-side-of-the-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрира по хоризонтала */
+    width: 100%;
+    height: 100%;
+    background-color: #1F2937;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.conversion-boxes {
+    width: 90%;
+    max-width: 650px;
+    margin-top: 10px;
+    padding: 5px 0 5px 0;
+    border-radius: 10px;
+    background-color: #273549;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.conversion-boxes:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.conversion-boxes {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conversion-titles {
+    margin: 18px 0 15px 0;
+    font-size: 22px;
+    color: #CCC1FF;
+}
+
+.conversion-paragraphs {
+    margin-top: 0;
+    font-size: 18px;
+    color: #F0F0FF;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#copyright-info {
+    margin: 10px 0 10px 0;
+    font-size: 21.9px;
+    color: #CCC;
+    letter-spacing: 1px;
+    text-align: center;
+    font-style: italic;
+}
+
+#my-linkedin-link {
+    color: #B295FF;
+}
+
+#my-linkedin-link:hover {
+    color: #D6C0FF; /* по-светъл нюанс */
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------------*/
+/* STYLES FOR PHONES IN PORTRAIT */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+    html, body {
+        user-select: none; /* С цел да не може да се копира */
+    }
+
+    #the-top-side-of-the-container {
+        height: 370px;
+    }
+
+    h1 {
+        font-size: 31.5px;
+        text-align: center;
+    }
+
+    #input-el {
+        height: 60px;
+        font-size: 30px;
+    }
+
+    #input-el::placeholder {
+        font-size: 27px;
+        transform: translateY(-100%);
+    }
+
+    #buttons-container {
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 1px;
+    }
+
+    .buttons-style {
+        height: 50px;
+    }
+
+    .buttons-style:hover {
+        background-color: #4C2889; /* същият цвят като в нормално състояние */
+    }
+
+    .conversion-boxes {
+        padding: 5px 10px 5px 10px;
+        box-sizing: border-box;
+    }
+
+    #copyright-info {
+        margin: 20px 0 20px 0;
+        padding: 0 19.5px 0 19.5px;
+        font-size: 19px;
+    }
+
+    #my-linkedin-link:hover {
+        color: #B295FF; /* същият цвят като в нормално състояние */
+    }
+
+    * {
+        -webkit-tap-highlight-color: transparent;
+      }
+}
+
+/*------------------------------------------------------------------------------------*/
+/* STYLES FOR PHONES IN LANDSCAPE */
+
+@media screen and (min-width: 600px) and (max-width: 999px) and (orientation: landscape) {
+
+    html, body {
+        user-select: none; /* С цел да не може да се копира */
+    }
+
+    #underline {
+        width: 97.5%; 
+        max-width: none;
+    }
+
+    .buttons-style:hover {
+        background-color: #4C2889; /* същият цвят като в нормално състояние */
+    }
+
+    .conversion-boxes {
+        padding: 5px 10px 5px 10px;
+        box-sizing: border-box;
+    }
+
+    #copyright-info {
+        margin: 20px 0 20px 0;
+        padding: 0 19.5px 0 19.5px;
+        font-size: 19px;
+        letter-spacing: 3.7px;
+    }
+
+    #my-linkedin-link:hover {
+        color: #B295FF; /* същият цвят като в нормално състояние */
+    }
+
+    * {
+        -webkit-tap-highlight-color: transparent;
+      }
+}
+
+/*------------------------------------------------------------------------------------*/
+/* STYLES FOR TABLETS */
+
+@media screen and (min-width: 600px) and (max-width: 1280px) and (orientation: portrait) {
+
+    html, body {
+        user-select: none; /* С цел да не може да се копира */
+    }
+
+    .buttons-style:hover {
+        background-color: #4C2889; /* същият цвят като в нормално състояние */
+    }
+
+    #my-linkedin-link:hover {
+        color: #B295FF; /* същият цвят като в нормално състояние */
+    }
+
+    * {
+        -webkit-tap-highlight-color: transparent;
+      }
+}
+
+/*------------------------------------------------------------------------------------*/
+/* STYLES FOR TABLETS IN LANDSCAPE */
+
+@media screen and (min-width: 999px) and (max-width: 1369px) and (orientation: landscape) {
+
+    html, body {
+        user-select: none; /* С цел да не може да се копира */
+    }
+
+    .buttons-style:hover {
+        background-color: #4C2889; /* същият цвят като в нормално състояние */
+    }
+
+    #my-linkedin-link:hover {
+        color: #B295FF; /* същият цвят като в нормално състояние */
+    }
+
+    * {
+        -webkit-tap-highlight-color: transparent;
+      }
+}
+
+/*------------------------------------------------------------------------------------*/
