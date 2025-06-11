@@ -219,7 +219,7 @@ h1 {
 
     #input-el::placeholder {
         font-size: 27px;
-        transform: translateY(-100%);
+        transform: translateY(-98%);
     }
 
     #buttons-container {
