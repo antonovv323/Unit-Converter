@@ -270,6 +270,11 @@ h1 {
         max-width: none;
     }
 
+    #input-el::placeholder {
+        font-size: 27px;
+        transform: translateY(-100%);
+    }
+
     .buttons-style:hover {
         background-color: #4C2889; /* същият цвят като в нормално състояние */
     }
