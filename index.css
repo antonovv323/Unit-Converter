@@ -272,7 +272,7 @@ h1 {
 
     #input-el::placeholder {
         font-size: 27px;
-        transform: translateY(-110%);
+        transform: translateY(-108%);
     }
 
     .buttons-style:hover {
