@@ -72,15 +72,13 @@ h1 {
     outline: none;
 }
 
-#input-el::placeholder {
-    position: relative;
-    top: 50%;
-    transform: translateY(-124%);
+#input-el::placeholder {   
     font-size: 28px;
     color: #D1B2FF;          
     font-style: italic;      /* Придава по-нежен и различен вид */
     letter-spacing: 0.5px;   /* Малко повече въздух между буквите */
     opacity: 0.85;           /* По-мек външен вид */
+    transform:translate3d(0,-2.5px,0)
 }
 
 #input-el {
@@ -217,9 +215,9 @@ h1 {
         font-size: 30px;
     }
 
-    #input-el::placeholder {
+    #input-el::placeholder {   
+        transform:translate3d(0,0px,0);
         font-size: 27px;
-        transform: translateY(-91%);
     }
 
     #buttons-container {
@@ -270,9 +268,8 @@ h1 {
         max-width: none;
     }
 
-    #input-el::placeholder {
+    #input-el::placeholder {   
         font-size: 27px;
-        transform: translateY(-113%);
     }
 
     .buttons-style:hover {
