@@ -216,7 +216,6 @@ h1 {
     }
 
     #input-el::placeholder {   
-        transform:translate3d(0,0px,0);
         font-size: 27px;
     }
 
@@ -266,10 +265,6 @@ h1 {
     #underline {
         width: 97.5%; 
         max-width: none;
-    }
-
-    #input-el::placeholder {   
-        transform:translate3d(0,-1px,0)
     }
 
     .buttons-style:hover {
