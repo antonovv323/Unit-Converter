@@ -216,6 +216,7 @@ h1 {
     }
 
     #input-el::placeholder {   
+        transform: translate3d(0, -1px, 0); /* по-малко от -2.5px */
         font-size: 27px;
     }
 
